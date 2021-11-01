@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText textName,textAge,textAddress,textHobby,textGPA,textChamNgon,textMonAn;
+    private EditText textName,textAge,textAddress,textHobby,textGPA,textChamNgon,textMonAn,textEmail,text_so_dien_thoai;
     private Button button;
     private RadioButton b1,b2,b3;
     @Override
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         textGPA = (EditText) findViewById(R.id.textGPA);
         textChamNgon = (EditText) findViewById(R.id.text_cham_ngon);
         textMonAn = (EditText) findViewById(R.id.text_mon_an);
+        textEmail = (EditText) findViewById(R.id.text_email);
+        text_so_dien_thoai = (EditText) findViewById(R.id.text_so_dien_thoai);
         b1 = (RadioButton)findViewById(R.id.rb1);
         b2 = (RadioButton)findViewById(R.id.rb2);
         b3 = (RadioButton)findViewById(R.id.rb3);
@@ -50,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
         String tGPA = textGPA.getText().toString();
         String tChamNgon = textChamNgon.getText().toString();
         String tMonAn = textMonAn.getText().toString();
-        if (tName.length()==0 ||tAge.length()==0||tAddress.length()==0||tHobby.length()==0||tGPA.length()==0||tChamNgon.length()==0||tMonAn.length()==0||(!b1.isChecked() && !b2.isChecked() && !b3.isChecked()))
+        String tEmail = textEmail.getText().toString();
+        String tSDT = text_so_dien_thoai.getText().toString();
+        if (tName.length()==0 ||tAge.length()==0||tAddress.length()==0||tHobby.length()==0||tGPA.length()==0||tChamNgon.length()==0||tMonAn.length()==0||tEmail.length()==0||tSDT.length()==0||(!b1.isChecked() && !b2.isChecked() && !b3.isChecked()))
         {
             Toast.makeText(this, "Bạn điền thiếu kìa :3", Toast.LENGTH_SHORT).show();
         }
