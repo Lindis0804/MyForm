@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="textViewGioi_tinh">Giới tính của bạn là?</string>
+    <string name="textViewTuoi">Bạn bao nhiêu tuổi?</string>
+    <string name="textViewTen">Tên bạn là gì?</string>
+    <string name="textViewDia_chi">Bạn sống ở đâu?</string>
+    <string name="textViewSo_thich">Sở thích của bạn là gì?</string>
+    <string name="textViewGPA">GPA của bạn?</string>
+    <string name="textView_cham_ngon">Châm ngôn yêu thích của bạn?</string>
+    <string name="textView_mon_an">Món ăn yêu thích của bạn là gì?</string>
+</resources>
